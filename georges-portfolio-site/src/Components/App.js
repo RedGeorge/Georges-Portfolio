@@ -5,6 +5,7 @@ import './Styles/App.css';
 import Sun from './Sun';
 import PSPlanet from './PSPlanet';
 import SkillsPlanet from './SkillsPlanet';
+import ETPlanet from './ETPlanet';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Sun />
         <PSPlanet/>
         <SkillsPlanet/>
+        <ETPlanet/>
       </Suspense>
     </Canvas>
   );
@@ -24,6 +26,7 @@ function App() {
 
 export default App;
 
+//Comments below cannot be in-line as this messes with the Suspense element, causing it to malfunction with rerendering and breaking the app.
 //{/* <ambientLight /> Shows colour on all planets/sun */}
 // {/* <pointLight position={ [25, 0, 0] } /> {/* Gives effect that sun is emitting light */}
 // <OrbitControls /> {/* Allows user to move camera around space */}
