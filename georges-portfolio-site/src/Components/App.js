@@ -5,6 +5,7 @@ import './Styles/App.css';
 import Sun from './Sun';
 import PSPlanet from './PSPlanet';
 import SkillsPlanet from './SkillsPlanet';
+import OtherPlanet from './OtherPlanet';
 import ETPlanet from './ETPlanet';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Sun />
         <PSPlanet/>
         <SkillsPlanet/>
+        <OtherPlanet/>
         <ETPlanet/>
       </Suspense>
     </Canvas>
