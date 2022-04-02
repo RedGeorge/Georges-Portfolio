@@ -24,7 +24,7 @@ export default function ETPlanet(){
                   <sphereGeometry args={ [0.85, 32, 32] } />{/*Sets shape as a sphere using three.js and specifies dimensions.*/}
                   <meshStandardMaterial map={eTPlanet} />{/*Sets material type from three.js and maps the texture image to surface of the shape.*/}
               </mesh>
-              <mesh position={[0, 0, 0]} rotation={[1.3, 0, 0]} ref={ref} castShadow visible>{/* Creates shape and sets position using x, y, z co-ordinates. Also makes ring more horizontal and cast a shadow.*/}
+              <mesh position={[0, 0, 0]} rotation={[-1.3, 0, 0]} ref={ref} castShadow visible>{/* Creates shape and sets position using x, y, z co-ordinates. Also makes ring more horizontal and cast a shadow.*/}
                   <ringBufferGeometry args={ [1.1, 1.5, 64] } />
                   <meshStandardMaterial map={eTPlanetRing} side={THREE.DoubleSide} transparent={true} opacity={1} />
               </mesh>
