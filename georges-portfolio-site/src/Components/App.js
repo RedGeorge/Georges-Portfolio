@@ -7,13 +7,14 @@ import PSPlanet from './PSPlanet';
 import SkillsPlanet from './SkillsPlanet';
 import OtherPlanet from './OtherPlanet';
 import ETPlanet from './ETPlanet';
+import Text3D from './Text';
 
 function App() {
   return (
-    <Canvas display={'block'} camera={{position: [0, 0, 25], fov: 40}}> {/* Needed to 'draw on' in WebGL/> three.js. Camera sets starting point of view when page loads */}
+    <Canvas display={'block'} camera={{position: [0, 0, 20], fov: 45}}> {/* Needed to 'draw on' in WebGL/> three.js. Camera sets starting point of view when page loads */}
       <Suspense fallback={null}>
         <ambientLight /> 
-        <pointLight position={ [25, 0, 0] } /> 
+        <pointLight position={ [30, 0, 0] } /> 
         <OrbitControls /> 
         <Stars /> 
         <Sun />
@@ -21,6 +22,7 @@ function App() {
         <SkillsPlanet/>
         <OtherPlanet/>
         <ETPlanet/>
+        <Text3D text={''} position={ [0, 0, 0] } size={1}/>
       </Suspense>
     </Canvas>
   );
