@@ -2,7 +2,7 @@ import '@react-three/fiber';
 import * as THREE from 'three';
 import { useLoader, useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
-import sunTexture from '../Styles/Textures/sunTexture.jpg';
+import sunTexture from './Styles/Textures/sunTexture.jpg';
 
 export default function Sun(){
     const texture = useLoader(THREE.TextureLoader, sunTexture);

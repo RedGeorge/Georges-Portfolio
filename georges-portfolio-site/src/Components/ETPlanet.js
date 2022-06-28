@@ -3,9 +3,9 @@ import { useLoader, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useRef } from 'react';
 import { Billboard } from '@react-three/drei';
-import saturnPlanetTexture from '../Styles/Textures/saturnPlanetTexture.jpg';
-import saturnRingTexture from '../Styles/Textures/saturnRingTexture.png';
-import Text3D from '../HomePage/Text';
+import saturnPlanetTexture from './Styles/Textures/saturnPlanetTexture.jpg';
+import saturnRingTexture from './Styles/Textures/saturnRingTexture.png';
+import Text3D from './Text';
 
 export default function ETPlanet(){
     const eTPlanet = useLoader(THREE.TextureLoader, saturnPlanetTexture);
