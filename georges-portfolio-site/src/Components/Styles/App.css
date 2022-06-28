@@ -1,9 +1,7 @@
 body {
   background-color: rgb(47, 4, 77);
-  overflow: hidden;
 }
 
 Canvas {
   display: block;
 }
-

@@ -3,8 +3,8 @@ import { useLoader, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useRef } from 'react';
 import { Billboard } from '@react-three/drei';
-import Text3D from '../HomePage/Text';
-import mercuryTexture from '../Styles/Textures/mercuryTexture.jpg';
+import Text3D from './Text';
+import mercuryTexture from './Styles/Textures/mercuryTexture.jpg';
 
 export default function PSPlanet(){
     const pSPlanet = useLoader(THREE.TextureLoader, mercuryTexture);

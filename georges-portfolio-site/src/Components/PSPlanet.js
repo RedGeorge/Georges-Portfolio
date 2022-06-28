@@ -3,8 +3,8 @@ import * as THREE from 'three';
 import { useLoader, useFrame } from '@react-three/fiber';
 import { Billboard } from '@react-three/drei';
 import { useRef } from 'react';
-import Text3D from '../HomePage/Text';
-import marsTexture from '../Styles/Textures/marsTexture.jpg';
+import Text3D from './Text';
+import marsTexture from './Styles/Textures/marsTexture.jpg';
 
 export default function SkillsPlanet(){
     const skillsPlanet = useLoader(THREE.TextureLoader, marsTexture);

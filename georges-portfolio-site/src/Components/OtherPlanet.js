@@ -3,8 +3,8 @@ import { useLoader, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useRef } from 'react';
 import { Billboard } from '@react-three/drei';
-import Text3D from '../HomePage/Text';
-import earthTexture from '../Styles/Textures/earthTexture.jpg';
+import Text3D from './Text';
+import earthTexture from './Styles/Textures/earthTexture.jpg';
 
 export default function OtherPlanet(){
     const otherPlanet = useLoader(THREE.TextureLoader, earthTexture);

@@ -1,7 +1,7 @@
 import { extend } from '@react-three/fiber';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
-import Montserrat from '../../Montserrat Medium_Regular.json';
+import Montserrat from '../Montserrat Medium_Regular.json';
 
 extend({ TextGeometry })
 
